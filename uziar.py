@@ -15,6 +15,11 @@ if selected_item == "Pizza":
     selected_size = st.selectbox("Select size", sizes)
 
     quantity = st.number_input("Quantity", value=1)
+else :
+    selected_item="burger"
+    patie = ["chicken","beef","allo ticke"]
+    vegetables = st.multiselect("onion","cabbage","tamato")
+    quantity = st.number-input("quantity",value=1)
 
     if st.button("Order Now"):
         st.write(f"You have ordered {quantity} {selected_size} {selected_item}(s) with:")
