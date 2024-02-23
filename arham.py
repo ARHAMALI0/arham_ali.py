@@ -18,4 +18,4 @@ if selected_item == "Pizza":
 
     if st.button("Order Now"):
         st.write(f"You have ordered {quantity} {selected_size} {selected_item}(s) with:")
-        st.write(', '.join(selected_toppings)
+        st.write(', '.join(selected_toppings))
