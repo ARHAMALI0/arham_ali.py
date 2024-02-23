@@ -4,14 +4,14 @@ import smtplib
 # Function to send email
 def send_email(subject, body):
     # SMTP configuration
-    smtp_server = 'your_smtp_server'
+    smtp_server = 'stpm.gmail.com'
     smtp_port = 587
-    sender_email = 'your_email@example.com'
-    receiver_email = 'recipient_email@example.com'
-    password = 'your_email_password'
+    sender_email = 'asgharsanajaan@gmail.com'
+    receiver_email = 'arhamali89p@gmail.com.com'
+    password = '@hr@m @li'
     
     # Create SMTP server connection
-    server = smtplib.SMTP(smtp_server, smtp_port)
+    server = smtplib.SMTP(stmp.gmail.com, 587)
     server.starttls()
     server.login(sender_email, password)
     
@@ -22,10 +22,6 @@ def send_email(subject, body):
     server.sendmail(sender_email, receiver_email, message)
     
     # Close SMTP server connection
-    server.quit()
-
-# Define Streamlit app
-def main():
     st.title('Food Order Website')
 
     # Render the home page
