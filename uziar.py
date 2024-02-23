@@ -17,7 +17,7 @@ if selected_item == "Pizza":
     quantity = st.number_input("Quantity", value=1)
     
 
-if selected_item == "burger"
+if selected_item == "burger":
     patie = ["chicken","beef","allo ticke"]
     vegetables = st.multiselect("onion","cabbage","tamato")
     quantity = st.number-input("quantity",value=1)
