@@ -1,5 +1,8 @@
 import streamlit as st
-x = st.slider("Select a value")
-st.write(x, "squared is", x * x)
-x = st.slider("Select a value")
-st.write(x, "squared is", x * x)
+
+def main():
+    st.title("Food Ordering Website")
+    st.markdown(open("index.html").read(), unsafe_allow_html=True)
+
+if __name__ == "__main__":
+    main()
