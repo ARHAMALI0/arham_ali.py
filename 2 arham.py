@@ -1,15 +1,21 @@
 import streamlit as st
 
-# Read HTML file
-with open('path/to/your/html/file.html', 'r') as f:
-    html_content = f.read()
+# Title of the app
+st.title("Food Order App")
 
-# Render HTML
-st.markdown(html_content, unsafe_allow_html=True)
-class Pizza:
-    def _init_(self, toppings):
-        self.toppings = toppings
-        self.price = 10.00  # Base price for a pizza
+# List of food items
+food_items = ["Pizza", "Burger", "Pasta"]
+selected_item = st.selectbox("Select an item", food_items)
 
-    def calculate_total(self, quantity):
-        return self.price *
+if selected_item == "Pizza":
+    toppings = ["Pepperoni", "Mushrooms", "Olives", "Bell Peppers"]
+    selected_toppings = st.multiselect("Choose toppings", toppings)
+
+    sizes = ["Small", "Medium", "Large"]
+    selected_size = st.selectbox("Select size", sizes)
+
+    quantity = st.number_input("Quantity", value=1)
+
+    if st.button("Order Now"):
+        st.write(f"You have ordered {quantity} {selected_size} {selected_item}(s) with:")
+        st.write(', '.join(selected_toppings))
