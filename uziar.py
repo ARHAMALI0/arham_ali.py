@@ -6,7 +6,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
