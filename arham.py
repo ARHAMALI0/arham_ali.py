@@ -11,11 +11,3 @@ st.markdown("""
     <h1 style='color: green;'>This is Markdown with HTML</h1>
     <button>This is a button</button>
 """, unsafe_allow_html=True)
-import streamlit as st
-
-# Read HTML file
-with open('path/to/your/html/file.html', 'r') as f:
-    html_content = f.read()
-
-# Render HTML
-st.markdown(html_content, unsafe_allow_html=True)
