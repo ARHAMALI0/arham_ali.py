@@ -1,21 +1,21 @@
-
 import streamlit as st
 
-# Title of the app
-st.title("Food Order App")
+# Display raw HTML
+st.write("""
+    <h1 style='color: blue;'>This is HTML</h1>
+    <button>This is a button</button>
+""")
 
-# List of food items
-food_items = ["Pizza", "Burger", "Pasta"]
-selected_item = st.selectbox("Select an item", food_items)
+# You can also use the `st.markdown` function to render HTML
+st.markdown("""
+    <h1 style='color: green;'>This is Markdown with HTML</h1>
+    <button>This is a button</button>
+""", unsafe_allow_html=True)
+import streamlit as st
 
-if selected_item == "Pizza":
-    toppings = ["Pepperoni", "Mushrooms", "Olives", "Bell Peppers"]
-    selected_toppings = st.multiselect("Choose toppings", toppings)
-    sizes = ["Small", "Medium", "Large"]
-    selected_size = st.selectbox("Select size", sizes)
+# Read HTML file
+with open('path/to/your/html/file.html', 'r') as f:
+    html_content = f.read()
 
-    quantity = st.number_input("Quantity", value=1)
-
-    if st.button("Order Now"):
-        st.write(f"You have ordered {quantity} {selected_size} {selected_item}(s) with:")
-        st.write(', '.join(selected_toppings))
+# Render HTML
+st.markdown(html_content, unsafe_allow_html=True)
