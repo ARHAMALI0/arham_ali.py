@@ -1,9 +1,6 @@
 import streamlit as st
 
 # Title of the app
-#file uploader widget
-uploaded_file = st.file_uploader([b.png])
-
 st.title("Food Order App")
 
 # List of food items
