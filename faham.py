@@ -7,7 +7,7 @@ st.title("Food Order App")
 food_items = ["Pizza", "Burger", "Pasta"]
 selected_item = st.selectbox("Select an item", food_items)
 
-if selected_item == "Pizza":
+if selected_item == ["Pizza","burger","pasta"]:
     toppings = ["Pepperoni", "Mushrooms", "Olives", "Bell Peppers"]
     selected_toppings = st.multiselect("Choose toppings", toppings)
 
@@ -21,7 +21,8 @@ if selected_item == "Pizza":
         st.write(', '.join(selected_toppings))
        
 # Create a mailto link
-email_link = 'mailto:recipient@example.com?subject=Subject%20of%20the%20email&body=Body%20of%20the%20email'
+email_link = 'arhamali89p@gmail.com
+'
 
 # Display the link
 st.markdown(f'[Send Email]({email_link})')
