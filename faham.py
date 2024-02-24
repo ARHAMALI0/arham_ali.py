@@ -7,7 +7,7 @@ st.title("Food Order App")
 food_items = ["Pizza", "Burger", "Pasta"]
 selected_item = st.selectbox("Select an item", food_items)
 
-if selected_item == "Pizza:
+if selected_item == "Pizza":
     toppings = ["Pepperoni", "Mushrooms", "Olives", "Bell Peppers"]
     selected_toppings = st.multiselect("Choose toppings", toppings)
 
