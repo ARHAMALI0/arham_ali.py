@@ -21,7 +21,7 @@ if selected_item == ["Pizza","burger","pasta"]:
         st.write(', '.join(selected_toppings))
        
 # Create a mailto link
-email_link = 'arhamali89p@gmail.com
+email_link = 'arhamali89p@gmail.com'
 '
 
 # Display the link
