@@ -22,7 +22,6 @@ if selected_item == ["Pizza","burger","pasta"]:
        
 # Create a mailto link
 email_link = 'arhamali89p@gmail.com'
-'
 
 # Display the link
 st.markdown(f'[Send Email]({email_link})')
